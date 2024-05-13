@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rohan Kumar</title>
+    <link rel="stylesheet" href="/assets/css/segments.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/heavy.css"
+      media="(orientation:portrait)"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/heavy.css"
+      media="print"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/heavy.css"
+      media="all"
+    />
+  </head>
+  <body style="text-align: center">
+    <!-- BUNDLERS : vite, parcel, webpack -->
+    <div id="header">
+      <h1>header</h1>
+      <div class="heavy-container">
+        <div class="heavy-content">
+          <div class="heavy-element">
+            <h1>Heavy CSS Example</h1>
+            <p>This is an example of a web page with a heavy CSS file.</p>
+          </div>
+          <div class="heavy-element">
+            <h2>More Content</h2>
+            <p>More content here...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="root">
+      <button id="action">click</button>
+      <button id="action" onclick="startComputation()">
+        start computation
+      </button>
+      <button id="button" onclick="startWorker()">start</button>
+      <button id="button" onclick="stopWorker()">end</button>
+    </div>
+    <div id="footer">
+      <h1>footer</h1>
+    </div>
+    <div id="output"></div>
+  </body>
+  <script type="module" src="worker.js"></script>
+  <script type="module" src="index.js"></script>
+  <script></script>
+</html>
